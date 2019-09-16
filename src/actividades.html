@@ -1,0 +1,104 @@
+
+<html>
+    <head>
+        <title>Actividades</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tarjetas</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="..\css\actividades.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/tarjeta.css">
+        <link rel="import" href="/../src/tarjetas.html">
+        <link href="tarjetas.html" rel="import" />
+
+    </head>
+    <body>
+        <nav>
+            <div class= "menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"> Inicio</i></a></li>
+                    <li><a href="#" id="a" class="fa fa-map-marker"> Actividades</a></li>
+                    <li><a href="#" id="b" class="fa fa-heart"> Favoritos</a></li>
+                    <!-- <li><a href="#" class="menu-item">W2P</a></li> -->
+                    <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+
+                </ul>
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Buscar">
+                    </form>
+                </div>
+                <a class="close" ><i class="fa fa-times"></i></a>
+
+            </div>
+            <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card shadow" style="width: 20rem;">
+                                <div class="inner">
+                                    <img src="..\stock\restaruante.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Restaurantes</h5>
+                                    <p class="card-text">Te decimos dónde comer y beber en tu zona.</p>
+                                    <a href="#" class="btn btn-success">Ver más...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow" style="width: 20rem;">
+                                <div class="inner">
+                                <img src="..\stock\bares.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Bares</h5>
+                                    <p class="card-text">Te decimos dónde probar los mejores coctéles en tu zona.</p>
+                                    <a href="#" class="btn btn-success">Ver más...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow" style="width: 20rem;">
+                                <div class="inner">
+                                    <img src="..\stock\arteyc.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Arte Y Cultura</h5>
+                                    <p class="card-text">Descubre eventos, galerías, exposiciones y lo más relevante del mundo del arte y la cultura en tu zona.</p>
+                                    <a href="#" class="btn btn-success">Ver más...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </nav>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#search').click(function(){
+                    $('#a').toggleClass('hide-item')
+                    $('#b').toggleClass('hide-item')
+                    $('.search-form').toggleClass('active')
+                    $('.close').toggleClass('active')
+                    $('#search').hide()
+                })
+                $('.close').click(function(){
+                    $('#a').removeClass('hide-item')
+                    $('#b').removeClass('hide-item')
+                    $('.search-form').removeClass('active')
+                    $('.close').removeClass('active')
+                    $('#search').show()
+
+                })
+
+            })
+  
+        </script>
+
+    </body>
+</html>
