@@ -1,0 +1,35 @@
+@media print {
+  .container {
+    width: auto;
+  }
+}
+
+.note
+{
+    text-align: center;
+    height: 9%;
+    background: -webkit-linear-gradient(left, #0DFF7F, #D2FF0D);
+    color: #fff;
+    font-weight: bold;
+    line-height: 399%;
+}
+.form-content
+{
+    padding: 10%;
+    border: 1px solid #ced4da;
+    margin-bottom: 5%;
+}
+.form-control{
+    align-content: center;
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #36FF1A;
+    color: #fff;
+}
