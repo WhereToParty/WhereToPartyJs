@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="../css/tarjeta.css">
         <link rel="import" href="/../src/tarjetas.html">
         <link href="tarjetas.html" rel="import" />
-
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
         <nav>
@@ -25,7 +25,7 @@
                     <li><a href="#" id="b" class="fa fa-heart"> Favoritos</a></li>
                     <!-- <li><a href="#" class="menu-item">W2P</a></li> -->
                     <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
-
+					<li id="app"><a><i class="fa fa-user-o"> {{ user }}</i></a></li>
                 </ul>
                 <div class="search-form">
                     <form>
@@ -99,6 +99,16 @@
             })
   
         </script>
-
+		<script>
+			var tmp=localStorage.getItem("userE");
+			var app = new Vue({
+				el: '#app',
+				data: {
+					user: tmp
+				}
+			})
+		</script>
+		
+		
     </body>
 </html>

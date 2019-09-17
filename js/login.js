@@ -37,15 +37,14 @@ function loginClick(){
           document.getElementById('quickstart-sign-in').disabled = false;
           // [END_EXCLUDE]
         });
-	
-	
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (user) {
     // User is signed in.
 			var displayName = user.displayName;
 			var email = user.email;
-    // ...
-			console.log(email);
+			localStorage.setItem("userE",email);
+			//console.log(displayName);
+			return window.location.href='actividades.html';
 		}else {
     // User is signed out.
     // ...
