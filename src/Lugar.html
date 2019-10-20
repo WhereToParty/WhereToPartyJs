@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <title>Activities</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tarjetas</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="..\css\actividades.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/tarjeta.css">
+        <link rel="import" href="/../src/tarjetas.html">
+        <link href="tarjetas.html" rel="import" />
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class= "menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"> Home</i></a></li>
+                    <li><a href="#" id="a" class="fa fa-map-marker"> Activities</a></li>
+                    <li><a href="#" id="b" class="fa fa-heart"> Favorites</a></li>
+                    <!-- <li><a href="#" class="menu-item">W2P</a></li> -->
+                    <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+					<li id="app"><a><i class="fa fa-user-o"> {{ user }}</i></a></li>
+                </ul>
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Buscar">
+                    </form>
+                </div>
+                <a class="close" ><i class="fa fa-times"></i></a>
+
+            </div>
+            <div class="container">
+
+                </div>
+
+        </nav>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script >
+    
+    </script>
+<script type="text/javascript">
+
+</script>
+
+		<script>
+			var tmp=localStorage.getItem("userE");
+			var app = new Vue({
+				el: '#app',
+				data: {
+					user: tmp
+				}
+			})
+		</script>
+
+
+    </body>
+</html>
